@@ -1,0 +1,75 @@
+.navbar {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  isolation: isolate;
+  padding: 16px 16px 24px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0 0 16px;
+    background-color: #f7f7f7;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 16px;
+    background: radial-gradient(
+        circle at 50% 0,
+        #f7f7f7 12px,
+        transparent 10.5px
+      )
+      0 0 / 24px 16px repeat-x;
+    content: "";
+  }
+
+  nav {
+    display: flex;
+    overflow: auto;
+    gap: 8px;
+  }
+
+  &__divider {
+    margin: 16px 0;
+    width: 2px;
+    border-radius: 2px;
+    background-color: #e8a7b8;
+  }
+}
+
+.detail {
+  flex: 1;
+  width: 100%;
+  padding: 16px 32px 0;
+}
+
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  fill: #ffffff;
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 150px;
+  }
+}
+
+.footer {
+  z-index: 1;
+  padding: 16px;
+  font-size: 12px;
+  text-align: right;
+}
