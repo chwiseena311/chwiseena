@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./link-square.scss";
 
 type LinkSquareProps = {
@@ -8,11 +9,11 @@ type LinkSquareProps = {
 
 export default function LinkSquare({ icon, href, title }: LinkSquareProps) {
   return (
-    <a className="link-square" href={href}>
+    <Link className="link-square" to={href}>
       <span className="link-square__icon">
         <img src={icon} alt="" />
       </span>
       <span className="link-square__title">{title}</span>
-    </a>
+    </Link>
   );
 }
