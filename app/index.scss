@@ -9,7 +9,7 @@
     position: absolute;
     z-index: -1;
     inset: 0 0 16px;
-    background-color: #f7f7f7;
+    background-color: var(--color-navbar);
     content: "";
   }
 
@@ -22,7 +22,7 @@
     height: 16px;
     background: radial-gradient(
         circle at 50% 0,
-        #f7f7f7 12px,
+        var(--color-navbar) 12px,
         transparent 10.5px
       )
       0 0 / 24px 16px repeat-x;
@@ -39,7 +39,7 @@
     margin: 16px 0;
     width: 2px;
     border-radius: 2px;
-    background-color: #e8a7b8;
+    background-color: var(--color-divider);
   }
 }
 
@@ -57,7 +57,7 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  fill: #ffffff;
+  fill: var(--color-white);
 
   svg {
     position: relative;

@@ -1,0 +1,39 @@
+.projects {
+  display: flex;
+  gap: 24px;
+
+  &__column {
+    flex: 1;
+    min-width: 0;
+
+    .link-sm {
+      float: left;
+      margin: 0 12px 0 0;
+    }
+  }
+
+  .project + .project {
+    margin-top: 24px;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+
+    &--professional {
+      color: var(--color-pink);
+    }
+
+    &--personal {
+      color: var(--color-green);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    flex-direction: column;
+  }
+}

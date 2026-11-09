@@ -4,7 +4,7 @@ import cherryIcon from "./assets/icons/48/icons8-cherry-48.png";
 import mateIcon from "./assets/icons/48/icons8-mate-48.png";
 import pearIcon from "./assets/icons/48/icons8-pear-48.png";
 import raspberryIcon from "./assets/icons/48/icons8-raspberry-48.png";
-import LinkSm from "./elements/link-sm/link-sm";
+import LinkSquare from "./elements/link-square/link-square";
 import "./index.scss";
 
 export default function Index() {
@@ -12,12 +12,12 @@ export default function Index() {
     <>
       <div className="navbar">
         <nav>
-          <LinkSm icon={mateIcon} href="/" title="Home" />
+          <LinkSquare icon={mateIcon} href="/" title="Home" />
           <div className="navbar__divider" />
-          <LinkSm icon={appleIcon} href="/about" title="About" />
-          <LinkSm icon={cherryIcon} href="/projects" title="Projects" />
-          <LinkSm icon={pearIcon} href="/resume" title="Resume" />
-          <LinkSm icon={raspberryIcon} href="/contact" title="Contact" />
+          <LinkSquare icon={appleIcon} href="/about" title="About" />
+          <LinkSquare icon={cherryIcon} href="/projects" title="Projects" />
+          <LinkSquare icon={pearIcon} href="/resume" title="Resume" />
+          <LinkSquare icon={raspberryIcon} href="/contact" title="Contact" />
         </nav>
       </div>
       <div className="detail">

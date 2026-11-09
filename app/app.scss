@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap");
 
+:root {
+  --color-text: #121212;
+  --color-white: #fff;
+  --color-neutral-hover: #e3e3e3;
+  --color-navbar: #f7f7f7;
+  --color-divider: #e8a7b8;
+  --color-pink: #b9576c;
+  --color-green: #708f3c;
+  --color-background-pink: #ffd6df;
+  --color-background-peach: #ffe0bd;
+  --color-background-light-green: #e8f5b5;
+  --color-background-green: #cdebb0;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -15,7 +29,7 @@ body {
   height: 100%;
   margin: 0;
   line-height: 1.5;
-  color: #121212;
+  color: var(--color-text);
 }
 
 body {
@@ -24,10 +38,10 @@ body {
   width: 100%;
   background: linear-gradient(
     120deg,
-    #ffd6df 0%,
-    #ffe0bd 35%,
-    #e8f5b5 70%,
-    #cdebb0 100%
+    var(--color-background-pink) 0%,
+    var(--color-background-peach) 35%,
+    var(--color-background-light-green) 70%,
+    var(--color-background-green) 100%
   );
   font-family: "Anaheim", sans-serif;
   font-optical-sizing: auto;
